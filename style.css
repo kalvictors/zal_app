@@ -5,6 +5,7 @@ body{
     width: 100%;
     font-family: 'Kameron', sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -27,17 +28,14 @@ body{
 .carousel-caption{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .carousel-caption h1{
-    font-size: 500%;
-    text-transform: uppercase;
     text-shadow: 1px 1px 10px grey;
-}
+} 
 
 .carousel-caption h3{
-    font-size: 200%;
+    font-size: 100%;
     font-weight: 500px;
     text-shadow: 1px 1px 10px grey;
     padding-bottom: 1rem;
@@ -169,6 +167,14 @@ hr.light{
 
 /* Media Queries */
 @media (max-width: 992px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        position: static;
+    }
+
     .social a{
         font-size: 4em;
         padding: 2rem;
@@ -180,9 +186,14 @@ hr.light{
     .carousel-caption{
         top: 45px;
     }
-    
+
+    .display-2{
+        font-size: 4px;
+    }
+
+
     .carousel-caption h1{
-        font-size: 350px;
+        font-size: 100px;
     }
     
     .carousel-caption h3{
@@ -214,7 +225,7 @@ hr.light{
     }
     
     .carousel-caption h1{
-        font-size: 250px;
+        font-size: 70px;
     }
     
     .carousel-caption h3{
